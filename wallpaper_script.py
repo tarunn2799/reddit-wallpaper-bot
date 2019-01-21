@@ -5,7 +5,7 @@ import glob, pprint, os
 
 start_time = t.time()
 r = glob.glob('*.jpg')
-file_path = 'C:/Users/Public/Wallpapers'
+file_path = 'C:\Users\Tarun Narayanan\Documents\Wallpapers' #Change this path 
 image_list = []
 
 reddit = praw.Reddit('wallpaper_bot')
@@ -40,4 +40,4 @@ for image in image_list:
     image_download(image)
     print('Image '+ str(int(image_list.index(image) + 1)) +' downloaded!\n')
 
-print('Program finished without errors! Runtime:' + str(int(t.time()) - start_time) + ' seconds')
+print('Program ran successfully.  Runtime:' + str(int(t.time()) - start_time) + ' seconds')
